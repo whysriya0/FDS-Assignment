@@ -47,7 +47,6 @@ FDS_Sriya/
 ├── case_study_1_retail.py          # Standalone Python program for Case Study 1
 ├── case_study_4_student_dropout.py # Standalone Python program for Case Study 4
 ├── run_all.py                      # Master pipeline runner script (executes full workflow)
-├── generate_case_study_report.py   # Automated PDF report compiler script
 ├── requirements.txt                # Pinned dependencies for reproducible execution
 ├── .gitignore                      # Standard Python, Jupyter, and OS ignore rules
 ├── README.md                       # Comprehensive repository documentation

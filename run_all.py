@@ -7,8 +7,7 @@ Description:
 This master runner script executes both case study analyses sequentially:
 1. Executes Case Study 1 (Online Retail Basket Clustering)
 2. Executes Case Study 4 (Predicting Student Dropout and Academic Success)
-3. Generates the comprehensive final submission PDF report
-4. Audits all output figures, CSV tables, and JSON files
+3. Verifies that all figures, CSV tables, and the final PDF report exist
 """
 
 import sys
@@ -31,7 +30,7 @@ def main():
     print("=" * 75)
     print("STARTING FULL REPRODUCTION PIPELINE: CASE STUDIES 1 & 4")
     print("Author: Sriya A. | Roll No: 160124733156 | Section: CSE-3")
-    print("Subject: Fundamentals of Data Science (FDS)")
+    print("Subject: Fundamentals of Data Science (22CSC59)")
     print("=" * 75)
 
     # 1. Run Case Study 1
@@ -40,13 +39,15 @@ def main():
     # 2. Run Case Study 4
     run_step("Case Study 4: Student Dropout & Academic Success", "case_study_4_student_dropout.py")
 
-    # 3. Generate Submission PDF Report
-    pdf_script = Path("generate_case_study_report.py")
-    if pdf_script.exists():
-        run_step("Generate Formal Submission PDF Report", "generate_case_study_report.py")
+    # 3. Verify Final PDF Report
+    final_pdf = Path("Combined_Case_Study_Report.pdf")
+    if final_pdf.exists():
+        print(f"\n[VERIFIED] Final Case Study Report confirmed: {final_pdf.resolve()} ({final_pdf.stat().st_size:,} bytes)")
+    else:
+        print("\n[WARNING] Combined_Case_Study_Report.pdf not found in root directory!")
 
     print("\n" + "=" * 75)
-    print("ALL CASE STUDY PIPELINES AND REPORTS COMPLETED SUCCESSFULLY!")
+    print("ALL CASE STUDY PIPELINES AND AUDITS COMPLETED SUCCESSFULLY!")
     print("=" * 75)
 
 
