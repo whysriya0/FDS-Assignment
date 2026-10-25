@@ -1,0 +1,38 @@
+attribute,semantic_type,dtype,unique_values
+Marital status,Nominal Code,int64,6
+Application mode,Nominal Code,int64,18
+Application order,Ordinal / Scaled Numeric,int64,8
+Course,Nominal Code,int64,17
+Daytime/evening attendance,Binary Indicator,int64,2
+Previous qualification,Nominal Code,int64,17
+Previous qualification (grade),Continuous / Discrete Numerical,float64,101
+Nacionality,Nominal Code,int64,21
+Mother's qualification,Nominal Code,int64,29
+Father's qualification,Nominal Code,int64,34
+Mother's occupation,Nominal Code,int64,32
+Father's occupation,Nominal Code,int64,46
+Admission grade,Continuous / Discrete Numerical,float64,620
+Displaced,Binary Indicator,int64,2
+Educational special needs,Binary Indicator,int64,2
+Debtor,Binary Indicator,int64,2
+Tuition fees up to date,Binary Indicator,int64,2
+Gender,Binary Indicator,int64,2
+Scholarship holder,Binary Indicator,int64,2
+Age at enrollment,Continuous / Discrete Numerical,int64,46
+International,Binary Indicator,int64,2
+Curricular units 1st sem (credited),Continuous / Discrete Numerical,int64,21
+Curricular units 1st sem (enrolled),Continuous / Discrete Numerical,int64,23
+Curricular units 1st sem (evaluations),Continuous / Discrete Numerical,int64,35
+Curricular units 1st sem (approved),Continuous / Discrete Numerical,int64,23
+Curricular units 1st sem (grade),Continuous / Discrete Numerical,float64,805
+Curricular units 1st sem (without evaluations),Continuous / Discrete Numerical,int64,11
+Curricular units 2nd sem (credited),Continuous / Discrete Numerical,int64,19
+Curricular units 2nd sem (enrolled),Continuous / Discrete Numerical,int64,22
+Curricular units 2nd sem (evaluations),Continuous / Discrete Numerical,int64,30
+Curricular units 2nd sem (approved),Continuous / Discrete Numerical,int64,20
+Curricular units 2nd sem (grade),Continuous / Discrete Numerical,float64,786
+Curricular units 2nd sem (without evaluations),Continuous / Discrete Numerical,int64,10
+Unemployment rate,Continuous / Discrete Numerical,float64,10
+Inflation rate,Continuous / Discrete Numerical,float64,9
+GDP,Continuous / Discrete Numerical,float64,10
+Target,Target: Nominal,object,3

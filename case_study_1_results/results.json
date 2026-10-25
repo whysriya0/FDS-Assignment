@@ -1,0 +1,364 @@
+{
+  "summary": {
+    "transactions": 7501,
+    "products": 119,
+    "total_item_occurrences": 29358,
+    "mean_size": 3.913878149580056,
+    "median_size": 3.0,
+    "std_size": 2.904707167361295,
+    "max_size": 20,
+    "singleton_share": 0.2338354886015198,
+    "small_share_le_2": 0.41487801626449805,
+    "large_share_ge_10": 0.05265964538061592,
+    "top10_occurrence_share": 0.3774439675727229
+  },
+  "pca_variance_20": 0.549032986164093,
+  "pca_variance_2": 0.11181870102882385,
+  "k_scan": [
+    {
+      "k": 2,
+      "silhouette": 0.17822501063346863,
+      "davies_bouldin": 2.499452037654752
+    },
+    {
+      "k": 3,
+      "silhouette": 0.1620667576789856,
+      "davies_bouldin": 2.3551521784871494
+    },
+    {
+      "k": 4,
+      "silhouette": 0.15448865294456482,
+      "davies_bouldin": 2.1904141045503374
+    },
+    {
+      "k": 5,
+      "silhouette": 0.15809905529022217,
+      "davies_bouldin": 2.116906943289522
+    },
+    {
+      "k": 6,
+      "silhouette": 0.15113893151283264,
+      "davies_bouldin": 2.035016486064763
+    },
+    {
+      "k": 7,
+      "silhouette": 0.1384962797164917,
+      "davies_bouldin": 1.997788986831759
+    },
+    {
+      "k": 8,
+      "silhouette": 0.14181673526763916,
+      "davies_bouldin": 2.0979457922561107
+    }
+  ],
+  "metrics": [
+    {
+      "model": "K-means",
+      "silhouette": 0.15715499222278595,
+      "davies_bouldin": 2.089409062314018,
+      "coverage": 1.0,
+      "note": "Full-data fit; 5 clusters"
+    },
+    {
+      "model": "Ward hierarchical",
+      "silhouette": 0.036833252757787704,
+      "davies_bouldin": 3.5260034755569443,
+      "coverage": 1.0,
+      "note": "Full-data fit; 5 clusters"
+    },
+    {
+      "model": "DBSCAN (non-noise)",
+      "silhouette": 0.2304096817970276,
+      "davies_bouldin": 1.106292884863792,
+      "coverage": 0.8285,
+      "note": "Noise excluded; standardized PC space"
+    },
+    {
+      "model": "Spectral (sample fit)",
+      "silhouette": -0.143550306558609,
+      "davies_bouldin": 1.9931412120441976,
+      "coverage": 1.0,
+      "note": "Fit only on evaluation sample"
+    }
+  ],
+  "dbscan_noise_share": 0.17504332755632582,
+  "kmeans_sizes": [
+    1193,
+    908,
+    900,
+    1161,
+    3339
+  ],
+  "profiles": [
+    {
+      "cluster": 0,
+      "baskets": 1193,
+      "mean_size": 4.960603520536463,
+      "rank": 1,
+      "product": "mineral water",
+      "prevalence": 1.0,
+      "lift": 4.1951904296875
+    },
+    {
+      "cluster": 0,
+      "baskets": 1193,
+      "mean_size": 4.960603520536463,
+      "rank": 2,
+      "product": "eggs",
+      "prevalence": 0.22045263648033142,
+      "lift": 1.226717472076416
+    },
+    {
+      "cluster": 0,
+      "baskets": 1193,
+      "mean_size": 4.960603520536463,
+      "rank": 3,
+      "product": "chocolate",
+      "prevalence": 0.2045264095067978,
+      "lift": 1.248293399810791
+    },
+    {
+      "cluster": 0,
+      "baskets": 1193,
+      "mean_size": 4.960603520536463,
+      "rank": 4,
+      "product": "milk",
+      "prevalence": 0.1852472722530365,
+      "lift": 1.4295676946640015
+    },
+    {
+      "cluster": 0,
+      "baskets": 1193,
+      "mean_size": 4.960603520536463,
+      "rank": 5,
+      "product": "ground beef",
+      "prevalence": 0.14333613216876984,
+      "lift": 1.4588390588760376
+    },
+    {
+      "cluster": 0,
+      "baskets": 1193,
+      "mean_size": 4.960603520536463,
+      "rank": 6,
+      "product": "frozen vegetables",
+      "prevalence": 0.13411568105220795,
+      "lift": 1.406995415687561
+    },
+    {
+      "cluster": 1,
+      "baskets": 908,
+      "mean_size": 4.213656387665198,
+      "rank": 1,
+      "product": "eggs",
+      "prevalence": 1.0,
+      "lift": 5.564539909362793
+    },
+    {
+      "cluster": 1,
+      "baskets": 908,
+      "mean_size": 4.213656387665198,
+      "rank": 2,
+      "product": "french fries",
+      "prevalence": 0.24669604003429413,
+      "lift": 1.4434219598770142
+    },
+    {
+      "cluster": 1,
+      "baskets": 908,
+      "mean_size": 4.213656387665198,
+      "rank": 3,
+      "product": "burgers",
+      "prevalence": 0.16079294681549072,
+      "lift": 1.8442015647888184
+    },
+    {
+      "cluster": 1,
+      "baskets": 908,
+      "mean_size": 4.213656387665198,
+      "rank": 4,
+      "product": "green tea",
+      "prevalence": 0.14757709205150604,
+      "lift": 1.1170289516448975
+    },
+    {
+      "cluster": 1,
+      "baskets": 908,
+      "mean_size": 4.213656387665198,
+      "rank": 5,
+      "product": "chocolate",
+      "prevalence": 0.13325990736484528,
+      "lift": 0.8133299946784973
+    },
+    {
+      "cluster": 1,
+      "baskets": 908,
+      "mean_size": 4.213656387665198,
+      "rank": 6,
+      "product": "milk",
+      "prevalence": 0.12114537507295609,
+      "lift": 0.9348883628845215
+    },
+    {
+      "cluster": 2,
+      "baskets": 900,
+      "mean_size": 4.235555555555556,
+      "rank": 1,
+      "product": "french fries",
+      "prevalence": 1.0,
+      "lift": 5.851013660430908
+    },
+    {
+      "cluster": 2,
+      "baskets": 900,
+      "mean_size": 4.235555555555556,
+      "rank": 2,
+      "product": "chocolate",
+      "prevalence": 0.18111111223697662,
+      "lift": 1.105381965637207
+    },
+    {
+      "cluster": 2,
+      "baskets": 900,
+      "mean_size": 4.235555555555556,
+      "rank": 3,
+      "product": "green tea",
+      "prevalence": 0.16111111640930176,
+      "lift": 1.219469666481018
+    },
+    {
+      "cluster": 2,
+      "baskets": 900,
+      "mean_size": 4.235555555555556,
+      "rank": 4,
+      "product": "mineral water",
+      "prevalence": 0.15111111104488373,
+      "lift": 0.6339398622512817
+    },
+    {
+      "cluster": 2,
+      "baskets": 900,
+      "mean_size": 4.235555555555556,
+      "rank": 5,
+      "product": "escalope",
+      "prevalence": 0.10777777433395386,
+      "lift": 1.358724594116211
+    },
+    {
+      "cluster": 2,
+      "baskets": 900,
+      "mean_size": 4.235555555555556,
+      "rank": 6,
+      "product": "pancakes",
+      "prevalence": 0.09666666388511658,
+      "lift": 1.0169658660888672
+    },
+    {
+      "cluster": 3,
+      "baskets": 1161,
+      "mean_size": 6.447028423772609,
+      "rank": 1,
+      "product": "spaghetti",
+      "prevalence": 0.9974160194396973,
+      "lift": 5.7286505699157715
+    },
+    {
+      "cluster": 3,
+      "baskets": 1161,
+      "mean_size": 6.447028423772609,
+      "rank": 2,
+      "product": "mineral water",
+      "prevalence": 0.3858742415904999,
+      "lift": 1.6188158988952637
+    },
+    {
+      "cluster": 3,
+      "baskets": 1161,
+      "mean_size": 6.447028423772609,
+      "rank": 3,
+      "product": "ground beef",
+      "prevalence": 0.25495263934135437,
+      "lift": 2.594843626022339
+    },
+    {
+      "cluster": 3,
+      "baskets": 1161,
+      "mean_size": 6.447028423772609,
+      "rank": 4,
+      "product": "chocolate",
+      "prevalence": 0.23169681429862976,
+      "lift": 1.41412353515625
+    },
+    {
+      "cluster": 3,
+      "baskets": 1161,
+      "mean_size": 6.447028423772609,
+      "rank": 5,
+      "product": "milk",
+      "prevalence": 0.22136089205741882,
+      "lift": 1.7082593441009521
+    },
+    {
+      "cluster": 3,
+      "baskets": 1161,
+      "mean_size": 6.447028423772609,
+      "rank": 6,
+      "product": "frozen vegetables",
+      "prevalence": 0.17571058869361877,
+      "lift": 1.8433637619018555
+    },
+    {
+      "cluster": 4,
+      "baskets": 3339,
+      "mean_size": 2.4908655286013777,
+      "rank": 1,
+      "product": "chocolate",
+      "prevalence": 0.12938004732131958,
+      "lift": 0.7896499037742615
+    },
+    {
+      "cluster": 4,
+      "baskets": 3339,
+      "mean_size": 2.4908655286013777,
+      "rank": 2,
+      "product": "green tea",
+      "prevalence": 0.1224917620420456,
+      "lift": 0.927155077457428
+    },
+    {
+      "cluster": 4,
+      "baskets": 3339,
+      "mean_size": 2.4908655286013777,
+      "rank": 3,
+      "product": "cookies",
+      "prevalence": 0.11740042269229889,
+      "lift": 1.4603989124298096
+    },
+    {
+      "cluster": 4,
+      "baskets": 3339,
+      "mean_size": 2.4908655286013777,
+      "rank": 4,
+      "product": "milk",
+      "prevalence": 0.0895477682352066,
+      "lift": 0.6910471320152283
+    },
+    {
+      "cluster": 4,
+      "baskets": 3339,
+      "mean_size": 2.4908655286013777,
+      "rank": 5,
+      "product": "escalope",
+      "prevalence": 0.08415693044662476,
+      "lift": 1.0609431266784668
+    },
+    {
+      "cluster": 4,
+      "baskets": 3339,
+      "mean_size": 2.4908655286013777,
+      "rank": 6,
+      "product": "pancakes",
+      "prevalence": 0.06768493354320526,
+      "lift": 0.7120682597160339
+    }
+  ]
+}

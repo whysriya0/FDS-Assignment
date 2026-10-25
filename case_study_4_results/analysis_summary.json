@@ -1,0 +1,70 @@
+{
+  "audit": {
+    "total_records": 4424,
+    "attributes": 37,
+    "missing_values": 0,
+    "blank_strings": 0,
+    "duplicate_records": 0,
+    "age_min": 17.0,
+    "age_max": 70.0,
+    "admission_grade_min": 95.0,
+    "admission_grade_max": 190.0,
+    "zero_first_sem_grades": 718,
+    "zero_first_sem_grade_pct": 16.229656419529835
+  },
+  "hypothesis_test": {
+    "H_statistic": 1094.1864855351168,
+    "degrees_of_freedom": 2,
+    "p_value": 2.5143375393667272e-238,
+    "significance_level_alpha": 0.05,
+    "decision": "Reject H0",
+    "effect_size_epsilon_squared": 0.24704512226535102,
+    "practical_importance": "Large effect size (epsilon^2 > 0.14)"
+  },
+  "model_comparison": [
+    {
+      "model": "Majority Class Baseline",
+      "accuracy": 0.4994350282485876,
+      "macro_precision": 0.1664783427495292,
+      "macro_recall": 0.3333333333333333,
+      "macro_f1": 0.22205476011052497
+    },
+    {
+      "model": "Admission-Only Logistic Regression",
+      "accuracy": 0.536723163841808,
+      "macro_precision": 0.5047443454823969,
+      "macro_recall": 0.5081507619571742,
+      "macro_f1": 0.5008859884283828
+    },
+    {
+      "model": "End of Semester 1 Logistic Regression",
+      "accuracy": 0.7073446327683616,
+      "macro_precision": 0.6661676340697006,
+      "macro_recall": 0.668675823593677,
+      "macro_f1": 0.6623170729459382
+    }
+  ],
+  "bootstrap_confidence_intervals": [
+    {
+      "metric": "Accuracy",
+      "mean": 0.7066542372881356,
+      "ci_lower_95": 0.6757062146892655,
+      "ci_upper_95": 0.735593220338983
+    },
+    {
+      "metric": "Macro F1",
+      "mean": 0.6610837630137635,
+      "ci_lower_95": 0.62588544042882,
+      "ci_upper_95": 0.6933433095589612
+    }
+  ],
+  "best_hyperparameters": {
+    "model__C": 0.1,
+    "model__class_weight": "balanced"
+  },
+  "recommendations": [
+    "Establish Early Warning Alerts triggering at midterm of Semester 1 for zero approved units.",
+    "Expand financial aid advising and tuition installment agreements prior to enrollment census.",
+    "Provide tailored academic onboarding and peer mentoring for non-traditional and mature students."
+  ]
+}
