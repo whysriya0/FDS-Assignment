@@ -209,10 +209,4 @@ git push -u origin main
 
 ---
 
-## 📜 References & Attribution
 
-1. Real, V., Mota, M., & Martins, P. (2021). *Predicting Student Dropout and Academic Success*. UCI Machine Learning Repository.
-2. Pedregosa, F. et al. (2011). *Scikit-learn: Machine Learning in Python*. Journal of Machine Learning Research, 12, 2825–2830.
-3. Kruskal, W. H., & Wallis, W. A. (1952). *Use of Ranks in One-Criterion Variance Analysis*. Journal of the American Statistical Association, 47(260), 583–621.
-4. Rousseeuw, P. J. (1987). *Silhouettes: A graphical aid to the interpretation and validation of cluster analysis*. Journal of Computational and Applied Mathematics, 20, 53–65.
-5. Davies, D. L., & Bouldin, D. W. (1979). *A Cluster Separation Measure*. IEEE Transactions on Pattern Analysis and Machine Intelligence, PAMI-1(2), 224–227.
