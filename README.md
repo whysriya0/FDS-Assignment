@@ -177,36 +177,6 @@ python case_study_1_retail.py
 python case_study_4_student_dropout.py
 ```
 
-### 4. Interactive Jupyter Notebook Execution
 
-Launch Jupyter to explore or re-run the notebook interactively:
-
-```bash
-jupyter lab Sriya_Case_Studies_1_and_4.ipynb
-# or
-jupyter notebook Sriya_Case_Studies_1_and_4.ipynb
-```
-
----
-
-## 📤 Pushing to GitHub (Instructions for Sriya)
-
-To push this completed repository to your GitHub account:
-
-```bash
-# 1. Initialize git (already performed locally)
-git status
-
-# 2. Add your GitHub remote repository URL
-git remote add origin https://github.com/<YOUR_GITHUB_USERNAME>/<YOUR_REPO_NAME>.git
-
-# 3. Rename branch to main
-git branch -M main
-
-# 4. Push all code, notebooks, datasets, and PDF reports
-git push -u origin main
-```
-
----
 
 
